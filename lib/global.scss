@@ -37,10 +37,10 @@ body {
 }
 
 .header {
-	background: url('../../assets/img/header.png') no-repeat;
-	background-size: contain;
 	height: 20vw;
-	width: 50%;
+	img {
+		height: 100%;
+	}
 }
 
 .shows {

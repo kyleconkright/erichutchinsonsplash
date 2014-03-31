@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 		cssmin: {
 		  	combine: {
 		    	files: {
-		      		'tmp/globalmin.css': ['lib/vendor/lemonade.css', 'tmp/global.css']
+		      		'tmp/globalmin.css': ['lib/vendor/bootstrap.css', 'tmp/global.css']
 		    	}
 		  	}
 		},
