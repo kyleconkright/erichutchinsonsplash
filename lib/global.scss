@@ -1,0 +1,61 @@
+// VARIABLES
+$purple: #500A3E;
+$white:  #FFECE7;
+$dark: #26272b;
+
+
+
+* {
+	font-size: 101%;
+	color: inherit;
+	font-weight: 400;
+	font-family: Roboto Condensed;
+	line-height: 1.25em;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+*, *:before, *:after { 
+  box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	color: $white;
+	background: $purple url('../../assets/img/bg.jpg') bottom right no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+}
+
+#container {
+	padding: 1%;
+}
+
+.header {
+	background: url('../../assets/img/header.png') no-repeat;
+	background-size: contain;
+	height: 20vw;
+	width: 50%;
+}
+
+.shows {
+	font-size: .85em;
+	.date {
+		padding: 0;
+	}
+}
+
+
+@media only screen 
+and (max-width : 980px)
+and (orientation: portrait) {
+
+
+}
+
+
