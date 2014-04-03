@@ -102,6 +102,16 @@ a.enter {
 	}
 }
 
+@media only screen and (orientation: landscape) {
+	body {
+		background: $purple;
+	}
+	#container-fluid {
+		.col-md-6 {
+			width: 80%;
+		}
+	}
+}
 
 @media only screen 
 and (max-width : 980px)
@@ -111,7 +121,7 @@ and (orientation: portrait) {
 		font-size: 125%;
 	}
 	#container-fluid {
-		padding: 15%;
+		padding: 5% 15%;
 	}
 	.enter {
 		width: 100%;
@@ -138,7 +148,18 @@ and (orientation: portrait) {
 		}
 	}
 	.header {
-		margin: 0 0 5px;
+		margin: 0 0 30px;
+		img {
+			height: 20vh;
+		}
+	}
+}
+
+@media only screen 
+and (max-width : 380px)
+and (orientation: portrait) {
+	.header {
+		margin: 0;
 		img {
 			width: 100%;
 			height: auto;
