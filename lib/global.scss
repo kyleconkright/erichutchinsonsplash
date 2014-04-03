@@ -1,7 +1,8 @@
 // VARIABLES
 $purple: #500A3E;
-$white:  #FFECE7;
+$white:  #FEEBE6;
 $dark: #26272b;
+$red: #FB2523;
 
 
 
@@ -32,8 +33,34 @@ body {
 	background-attachment: fixed;
 }
 
-#container {
-	padding: 1%;
+
+.pre {
+	display: block;
+	width: 100%;
+	background: $red;
+	color: $purple;
+	text-align: center;
+	p {
+		height: 60px;
+		line-height: 60px;
+		.pf {
+			font-size: 1.25em;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-family: Montserrat;
+		}
+		a.btn {
+			color: $white;
+			background: $purple;
+			padding: 10px 20px;
+			margin: 0 10px;
+			text-transform: uppercase;
+		}
+	}
+}
+
+#container-fluid {
+	padding: 4% 5%;
 }
 
 .header {
@@ -44,9 +71,18 @@ body {
 }
 
 .shows {
-	font-size: .85em;
-	.date {
-		padding: 0;
+	padding: 40px 0;
+	div {
+		padding: 5px 0;
+		span.city {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		a.tickets {
+			background: $red;
+			font-size: .8em;
+			padding: 3px 7px 3px 5px;
+		}
 	}
 }
 
