@@ -33,6 +33,13 @@ body {
 	background-attachment: fixed;
 }
 
+.bit-60 {
+	width: 60%;
+}
+.bit-40 {
+	width: 40%;
+}
+
 
 .pre {
 	display: block;
@@ -74,7 +81,7 @@ a.enter {
 	z-index: 1000;
 }
 
-#container-fluid {
+#container {
 	padding: 4% 5%;
 }
 
@@ -99,18 +106,27 @@ a.enter {
 			font-size: .8em;
 			padding: 3px 7px 3px 5px;
 		}
+		.so {
+			text-transform: uppercase;
+			color: $red;
+			font-weight: 700;
+		}
 	}
 }
 
-@media only screen and (orientation: landscape) {
-	body {
-		background: $purple;
+footer {
+	margin: 1% 0 2%;
+	height: 8vh;
+	background: url('../../assets/img/icon.svg') no-repeat left;
+	background-size: contain;
+}
+
+@media only screen
+and (max-width: 1100px) {
+	[class*=bit-] {
+		width: 100%;
 	}
-	#container-fluid {
-		.col-md-6 {
-			width: 80%;
-		}
-	}
+	
 }
 
 @media only screen 
@@ -156,8 +172,10 @@ and (orientation: portrait) {
 }
 
 @media only screen 
-and (max-width : 380px)
-and (orientation: portrait) {
+and (max-width : 380px) {
+	body {
+		background: $purple;
+	}
 	.header {
 		margin: 0;
 		img {
